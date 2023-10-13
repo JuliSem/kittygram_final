@@ -1,26 +1,29 @@
-#  Как работать с репозиторием финального задания
+# Kittygram
+### Описание проекта:
 
-## Что нужно сделать
+Проект **Kittygram** - это социальная сеть, где вы можете обмениваться фотографиями любимых питомцев.
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+### Стек технологий:
 
-## Как проверить работу с помощью автотестов
+- Python 3.10.12
+- node.js v18.17.1
+- backend: Django
+- frontend: React
+- nginx
+- gunicorn
+- PostgreSQL
+- Docker
+- CI/CD
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
-```
+### Запуск проекта:
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+Для локального запуска проекта необходимо выполнить действия описанные в файле README.md в папках [backend]
+(https://github.com/JuliSem/kittygram_final/blob/main/backend/README.md) и [frontend](https://github.com/JuliSem/kittygram_final/blob/main/frontend/README.md)
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
+### Автор проекта:
 
-## Чек-лист для проверки перед отправкой задания
+Семёнова Юлия (GitHub: JuliSem)
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+### Ссылка на проект:
+
+[Kittygram] (https://kittygram-practicum.sytes.net)
