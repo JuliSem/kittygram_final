@@ -17,7 +17,7 @@
 
 ### Запуск проекта:
 
-Для локального запуска проекта необходимо выполнить действия описанные в файле README.md в папках [backend](https://github.com/JuliSem/kittygram_final/blob/main/backend/README.md) и [frontend](https://github.com/JuliSem/kittygram_final/blob/main/frontend/README.md)
+Для локального запуска проекта необходимо выполнить действия описанные в файле **README.md** в папках [backend](https://github.com/JuliSem/kittygram_final/blob/main/backend/README.md) и [frontend](https://github.com/JuliSem/kittygram_final/blob/main/frontend/README.md)
 
 ### Автор проекта:
 
@@ -25,4 +25,4 @@
 
 ### Ссылка на проект:
 
-[Kittygram] (https://kittygram-practicum.sytes.net)
+[Kittygram](https://kittygram-practicum.sytes.net)
