@@ -9,7 +9,7 @@ SECRET_KEY = get_random_secret_key()
 
 DEBUG = os.getenv('DEBUG', 'False')
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(' ')
+ALLOWED_HOSTS = ['158.160.80.1', '127.0.0.1', 'localhost', 'kittygram-practicum.sytes.net']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
