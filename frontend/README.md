@@ -3,11 +3,17 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/yandex-praktikum/kittygram_frontend.git
+git clone "адрес клонируемого репозитория"
 ```
 
 ```
-cd kittygram_frontend
+cd kittygram_final
+```
+
+Перейти в папку с фронтендом:
+
+```
+cd frontend
 ```
 
 Установить зависимости:

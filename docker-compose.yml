@@ -1,4 +1,4 @@
-# для запуска проекта на удалённом сервере через образы с DockerHub
+# для локального запуска проекта в контейнерах
 
 version: '3'
 
@@ -14,19 +14,19 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
-    image: juliasem95/kittygram_backend
+    build: ./backend/
     env_file: .env
     volumes:
       - static:/backend_static
       - media:/app/media
   frontend:
-    image: juliasem95/kittygram_frontend
+    build: ./frontend/
     env_file: .env
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static:/frontend_static
   gateway:
-    image: juliasem95/kittygram_gateway
+    build: ./nginx/
     env_file: .env
     ports:
       - 9000:80
